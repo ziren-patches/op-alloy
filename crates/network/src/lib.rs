@@ -161,6 +161,7 @@ impl TransactionBuilder<Optimism> for OpTransactionRequest {
             TxType::Eip2930 => OpTxType::Eip2930,
             TxType::Eip7702 => OpTxType::Eip7702,
             TxType::Legacy => OpTxType::Legacy,
+            TxType::Goat => todo!(),
         }
     }
 
@@ -171,6 +172,7 @@ impl TransactionBuilder<Optimism> for OpTransactionRequest {
             TxType::Eip2930 => OpTxType::Eip2930,
             TxType::Eip7702 => OpTxType::Eip7702,
             TxType::Legacy => OpTxType::Legacy,
+            TxType::Goat => todo!(),
         })
     }
 

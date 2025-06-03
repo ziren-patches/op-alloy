@@ -397,6 +397,7 @@ impl OpTxEnvelope {
             TxEnvelope::Eip1559(tx) => Ok(tx.into()),
             tx @ TxEnvelope::Eip4844(_) => Err(tx),
             TxEnvelope::Eip7702(tx) => Ok(tx.into()),
+            TxEnvelope::Goat(_) => todo!(),
         }
     }
 
