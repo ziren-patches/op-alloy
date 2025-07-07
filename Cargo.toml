@@ -45,16 +45,27 @@ op-alloy-rpc-types-engine = { version = "0.13.0", path = "crates/rpc-types-engin
 op-alloy-rpc-jsonrpsee = { version = "0.13.0", path = "crates/rpc-jsonrpsee", default-features = false }
 
 # Alloy
-alloy-eips = { version = "0.14.0", default-features = false }
-alloy-serde = { version = "0.14.0", default-features = false }
-alloy-signer = { version = "0.14.0", default-features = false }
-alloy-network = { version = "0.14.0", default-features = false }
-alloy-provider = { version = "0.14.0", default-features = false }
-alloy-transport = { version = "0.14.0", default-features = false }
-alloy-consensus = { version = "0.14.0", default-features = false }
-alloy-rpc-types-eth = { version = "0.14.0", default-features = false }
-alloy-rpc-types-engine = { version = "0.14.0", default-features = false }
-alloy-network-primitives = { version = "0.14.0", default-features = false }
+alloy-eips = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-serde = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-signer = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-network = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-provider = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-transport = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-consensus = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-rpc-types-eth = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat",  default-features = false }
+alloy-rpc-types-engine = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+alloy-network-primitives = { git = "https://github.com/ziren-patches/alloy", branch = "patch-0.14.0-goat", default-features = false }
+
+# alloy-eips = { path = "../alloy/crates/eips", default-features = false }
+# alloy-serde = { path = "../alloy/crates/serde", default-features = false }
+# alloy-signer = { path = "../alloy/crates/signer", default-features = false }
+# alloy-network = { path = "../alloy/crates/network", default-features = false }
+# alloy-provider = { path = "../alloy/crates/provider", default-features = false }
+# alloy-transport = { path = "../alloy/crates/transport", default-features = false }
+# alloy-consensus = { path = "../alloy/crates/consensus", default-features = false }
+# alloy-rpc-types-eth = { path = "../alloy/crates/rpc-types-eth",  default-features = false }
+# alloy-rpc-types-engine = { path = "../alloy/crates/rpc-types-engine", default-features = false }
+# alloy-network-primitives = { path = "../alloy/crates/network-primitives", default-features = false }
 
 # Alloy RLP
 alloy-rlp = { version = "0.3", default-features = false }
